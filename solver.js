@@ -26,7 +26,7 @@ class Solver {
 
         if (this.level >= 1) {
             postMessage({ status: 'กำลังลองวิธีขั้นสูง (ยกกำลัง, ราก)...' });
-            this.runPhase(initialItems, ['B', '1', '2'], 7000, true);
+            this.runPhase(initialItems, ['B', '1', '2'], 7000, true); // `true` to continue building on previous results
             if (this.solutions.length > 0) return this.formatResults();
         }
         
